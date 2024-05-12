@@ -1,5 +1,7 @@
 # How to Contribute
 
+Inherited from Neofetch
+
 <!-- vim-markdown-toc GFM -->
 
 * [Coding Conventions](#coding-conventions)
