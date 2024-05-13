@@ -2,6 +2,7 @@
 
 A command-line system information tool written in bash. Fork of [Neofetch](https://github.com/dylanaraps/neofetch).
 
+Work in progress.
 
 ## Build
 
@@ -11,8 +12,8 @@ To merge the source code into a monolithic executable bash file, use:
 make build
 ```
 
-> From Neofetch:
-> 
+## From Neofetch
+
 > <img src="https://i.imgur.com/GFmC5Ad.png" alt="neofetch" align="right" height="240px">
 > 
 > Neofetch is a command-line system information tool written in `bash 3.2+`. Neofetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.
