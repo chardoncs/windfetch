@@ -141,8 +141,8 @@ get_args() {
             "--gap") gap="$2" ;;
             "--clean")
                 [[ -d "$thumbnail_dir" ]] && rm -rf "$thumbnail_dir"
-                rm -rf "/Library/Caches/neofetch/"
-                rm -rf "/tmp/neofetch/"
+                rm -rf "/Library/Caches/windfetch/"
+                rm -rf "/tmp/windfetch/"
                 exit
             ;;
 
@@ -190,7 +190,7 @@ get_args() {
             ;;
             "--gen-man")
                 help2man -n "A fast, highly customizable system info script" \
-                          -N ./neofetch -o neofetch.1
+                          -N ./windfetch -o windfetch.1
                 exit 1
             ;;
 
