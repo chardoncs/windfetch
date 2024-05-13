@@ -5,9 +5,6 @@ ICONDIR = $(SRCDIR)/icons
 TARGET = windfetch
 
 all:
-	@echo Run \'make install\' to install Windfetch.
-
-build:
 	@printf "Merging source files... "
 	@paste -s $(SRCDIR)/*-*.bash -d '\n' > $(TARGET)
 	@printf "done\n"
@@ -16,7 +13,7 @@ build:
 	@chmod +x $(TARGET)
 	@printf "done\n"
 
-install: build
+install: all
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(MANDIR)/man1
 	@cp -p $(TARGET) $(DESTDIR)$(PREFIX)/bin/$(TARGET)

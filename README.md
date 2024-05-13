@@ -9,7 +9,7 @@ Work in progress.
 To merge the source code into a monolithic executable bash file, use:
 
 ```bash
-make build
+make 
 ```
 
 ## From Neofetch
