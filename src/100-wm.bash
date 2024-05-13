@@ -25,6 +25,7 @@ get_wm() {
                                -e greenfield \
                                -e grefsen \
                                -e hikari \
+                               -e Hyprland \
                                -e kwin \
                                -e lipstick \
                                -e maynard \
