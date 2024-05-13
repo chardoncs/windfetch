@@ -114,6 +114,8 @@ get_de() {
         if [[ $WAYLAND_DISPLAY || $XDG_SESSION_TYPE == "wayland" ]]; then
             de+=" Wayland"
         fi
+
+        # TODO: Consider adding other protocol detection
     fi
 
     de_run=1
