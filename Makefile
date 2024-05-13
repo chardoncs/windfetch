@@ -1,6 +1,7 @@
 PREFIX = /usr
 MANDIR = $(PREFIX)/share/man
 SRCDIR = src
+ICONDIR = $(SRCDIR)/icons
 TARGET = windfetch
 
 all:
@@ -8,7 +9,7 @@ all:
 
 build:
 	@printf "Merging source files... "
-	@paste -s $(SRCDIR)/*-*.bash $(TARGET)
+	@paste -s $(SRCDIR)/*-*.bash -d '\n' > $(TARGET)
 	@printf "done\n"
 
 	@printf "Add execution permission... "
