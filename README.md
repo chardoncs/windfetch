@@ -3,6 +3,14 @@
 A command-line system information tool written in bash. Fork of [Neofetch](https://github.com/dylanaraps/neofetch).
 
 
+## Build
+
+To merge the source code into a monolithic executable bash file, use:
+
+```bash
+make build
+```
+
 > From Neofetch:
 > 
 > <img src="https://i.imgur.com/GFmC5Ad.png" alt="neofetch" align="right" height="240px">
