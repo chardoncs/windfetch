@@ -4,6 +4,8 @@ A command-line system information tool written in bash. Fork of [Neofetch](https
 
 Work in progress.
 
+[Repository on Codeberg](https://codeberg.org/chardon_cs/windfetch)
+
 ## Build
 
 To merge the source code into a monolithic executable bash file, use:
