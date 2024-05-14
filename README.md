@@ -14,6 +14,15 @@ To merge the source code into a monolithic executable bash file, use:
 make 
 ```
 
+## Roadmap
+
+| Task                      | Status         |
+|---------------------------|----------------|
+| Rebrand to Windfetch      | ✅ Done        |
+| WM detection fix          | ✅ Done        |
+| Nerd fonts support        | 🏗️ In progress |
+| Finish renaming in source | 🏗️ In progress |
+
 ## From Neofetch
 
 > <img src="https://i.imgur.com/GFmC5Ad.png" alt="neofetch" align="right" height="240px">
