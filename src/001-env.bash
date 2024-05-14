@@ -1,4 +1,4 @@
-version=0.1.2
+version=0.1.3
 
 # Fallback to a value of '5' for shells which support bash
 # but do not set the 'BASH_' shell variables (osh).
