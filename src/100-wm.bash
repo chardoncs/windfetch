@@ -9,7 +9,7 @@ get_wm() {
 
     if [[ -O "${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY:-wayland-0}" ]]; then
         if tmp_pid="$(lsof -t "${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY:-wayland-0}" 2>&1)" ||
-           tmp_pid="$(fuser   "${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY:-wayland-0}" 2>&1 | tr -s " " | cut -d " "  -f 2)"; then
+           tmp_pid="$(fuser   "${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY:-wayland-0}" 2>&1 | tr -s " " | (read -ra s; echo ${s[1]}))"; then
             wm="$(ps -p "${tmp_pid}" -ho comm=)"
         else
             # lsof may not exist, or may need root on some systems. Similarly fuser.
