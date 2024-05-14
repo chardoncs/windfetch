@@ -22,6 +22,7 @@ make
 | WM detection fix          | ✅ Done        |
 | Nerd fonts support        | 🏗️ In progress |
 | Finish renaming in source | 🏗️ In progress |
+| More to come...           |                |
 
 ## From Neofetch
 
