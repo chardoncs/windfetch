@@ -24,6 +24,6 @@ make
 | Rebrand to Windfetch      | ✅ Done        |
 | WM detection fix          | ✅ Done        |
 | Nerd fonts support        | 🏗️ In progress |
-| Finish renaming in source | 🏗️ In progress |
+| Finish renaming in source | ✅ Done        |
 | More to come...           |                |
 
