@@ -365,7 +365,7 @@ make_thumbnail() {
     esac
 
     # Create the thumbnail dir if it doesn't exist.
-    mkdir -p "${thumbnail_dir:=${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch}"
+    mkdir -p "${thumbnail_dir:=${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/windfetch}"
 
     if [[ ! -f "${thumbnail_dir}/${image_name}" ]]; then
         # Get image size so that we can do a better crop.
@@ -440,7 +440,7 @@ display_image() {
                 ueberzug layer --parser bash 0< <(
                     declare -Ap ADD=(\
                         [action]="add"\
-                        [identifier]="neofetch"\
+                        [identifier]="windfetch"\
                         [x]=$xoffset [y]=$yoffset\
                         [path]=$image\
                     )

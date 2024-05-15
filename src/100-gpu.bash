@@ -86,8 +86,8 @@ get_gpu() {
         ;;
 
         "Mac OS X"|"macOS")
-            if [[ -f "${cache_dir}/neofetch/gpu" ]]; then
-                source "${cache_dir}/neofetch/gpu"
+            if [[ -f "${cache_dir}/windfetch/gpu" ]]; then
+                source "${cache_dir}/windfetch/gpu"
 
             else
                 gpu="$(system_profiler SPDisplaysDataType |\

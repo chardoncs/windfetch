@@ -1,6 +1,6 @@
 read -rd '' config <<'EOF'
 # See this wiki page for more info:
-# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
+# https://github.com/dylanaraps/neofetch/gwiki/Customizing-Info
 print_info() {
     info title
     info underline
@@ -30,7 +30,7 @@ print_info() {
     # info "Song" song
     # [[ "$player" ]] && prin "Music Player" "$player"
     # info "Local IP" local_ip
-    # info "Public IP" public_ip
+    # info "Public IP" 
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
 
@@ -588,10 +588,10 @@ separator=":"
 # Example:
 #
 # Display colors 0-7 in the blocks.  (8 colors)
-# neofetch --block_range 0 7
+# windfetch --block_range 0 7
 #
 # Display colors 0-15 in the blocks. (16 colors)
-# neofetch --block_range 0 15
+# windfetch --block_range 0 15
 block_range=(0 15)
 
 # Toggle color blocks
@@ -625,7 +625,7 @@ block_height=1
 # begin printing the columns, in case you want to e.g. center them under your
 # text.
 # Example:
-# col_offset="auto" - Default behavior of neofetch
+# col_offset="auto" - Default behavior of windfetch
 # col_offset=7      - Leave 7 spaces then print the colors
 col_offset="auto"
 
@@ -639,8 +639,8 @@ col_offset="auto"
 # Flag:     --bar_char
 #
 # Example:
-# neofetch --bar_char 'elapsed' 'total'
-# neofetch --bar_char '-' '='
+# windfetch --bar_char 'elapsed' 'total'
+# windfetch --bar_char '-' '='
 bar_char_elapsed="-"
 bar_char_total="="
 
@@ -667,8 +667,8 @@ bar_length=15
 # Flag:     --bar_colors
 #
 # Example:
-# neofetch --bar_colors 3 4
-# neofetch --bar_colors distro 5
+# windfetch --bar_colors 3 4
+# windfetch --bar_colors distro 5
 bar_color_elapsed="distro"
 bar_color_total="distro"
 
@@ -711,7 +711,7 @@ image_backend="ascii"
 #
 # Default:  'auto'
 # Values:   'auto', 'ascii', 'wallpaper', '/path/to/img', '/path/to/ascii', '/path/to/dir/'
-#           'command output (neofetch --ascii "$(fortune | cowsay -W 30)")'
+#           'command output (windfetch --ascii "$(fortune | cowsay -W 30)")'
 # Flag:     --source
 #
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
@@ -795,7 +795,7 @@ ascii_bold="on"
 
 
 # Image loop
-# Setting this to on will make neofetch redraw the image constantly until
+# Setting this to on will make windfetch redraw the image constantly until
 # Ctrl+C is pressed. This fixes display issues in some terminal emulators.
 #
 # Default:  'off'
@@ -805,9 +805,9 @@ image_loop="off"
 
 # Thumbnail directory
 #
-# Default: '~/.cache/thumbnails/neofetch'
+# Default: '~/.cache/thumbnails/windfetch'
 # Values:  'dir'
-thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/neofetch"
+thumbnail_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/thumbnails/windfetch"
 
 # Crop mode
 #

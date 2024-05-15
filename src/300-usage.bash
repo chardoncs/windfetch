@@ -1,9 +1,9 @@
 usage() { printf "%s" "\
-Usage: neofetch func_name --option \"value\" --option \"value\"
+Usage: windfetch func_name --option \"value\" --option \"value\"
 
-Neofetch is a CLI system information tool written in BASH. Neofetch
-displays information about your system next to an image, your OS logo,
-or any ASCII file of your choice.
+Windfetch is a Neofetch fork that displays displays information about
+your system next to an image, your OS logo, or any ASCII file of
+your choice.
 
 NOTE: Every launch flag has a config option.
 
@@ -13,17 +13,17 @@ INFO:
     func_name                   Specify a function name (second part of info() from config) to
                                 quickly display only that function's information.
 
-                                Example: neofetch uptime --uptime_shorthand tiny
+                                Example: windfetch uptime --uptime_shorthand tiny
 
-                                Example: neofetch uptime disk wm memory
+                                Example: windfetch uptime disk wm memory
 
                                 This can be used in bars and scripts like so:
 
-                                memory=\"\$(neofetch memory)\"; memory=\"\${memory##*: }\"
+                                memory=\"\$(windfetch memory)\"; memory=\"\${memory##*: }\"
 
                                 For multiple outputs at once (each line of info in an array):
 
-                                IFS=\$'\\n' read -d \"\" -ra info < <(neofetch memory uptime wm)
+                                IFS=\$'\\n' read -d \"\" -ra info < <(windfetch memory uptime wm)
 
                                 info=(\"\${info[@]##*: }\")
 
@@ -32,7 +32,7 @@ INFO:
                                 'print_info()' function inside the config file.
                                 For example: 'info \"Memory\" memory' would be '--disable memory'
 
-                                NOTE: You can supply multiple args. eg. 'neofetch --disable cpu gpu'
+                                NOTE: You can supply multiple args. eg. 'windfetch --disable cpu gpu'
 
     --title_fqdn on/off         Hide/Show Fully Qualified Domain Name in title.
     --package_managers on/off   Hide/Show Package Manager names . (on, tiny, off)
@@ -151,7 +151,7 @@ IMAGE BACKEND:
 
     --ascii source              Shortcut to use 'ascii' backend.
 
-                                NEW: neofetch --ascii \"\$(fortune | cowsay -W 30)\"
+                                NEW: windfetch --ascii \"\$(fortune | cowsay -W 30)\"
 
     --caca source               Shortcut to use 'caca' backend.
     --catimg source             Shortcut to use 'catimg' backend.
@@ -259,15 +259,15 @@ OTHER:
     --print_config              Print the default config file to stdout.
     --stdout                    Turn off all colors and disables any ASCII/image backend.
     --help                      Print this text and exit
-    --version                   Show neofetch version
+    --version                   Show windfetch version
     -v                          Display error messages.
     -vv                         Display a verbose log for error reporting.
 
 DEVELOPER:
-    --gen-man                   Generate a manpage for Neofetch in your PWD. (Requires GNU help2man)
+    --gen-man                   Generate a manpage for Windfetch in your PWD. (Requires GNU help2man)
 
 
-Report bugs to https://github.com/dylanaraps/neofetch/issues
+Report bugs to https://codeberg.org/chardon_cs/windfetch/issues
 
 "
 exit 1
