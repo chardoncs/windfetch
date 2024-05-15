@@ -267,7 +267,7 @@ DEVELOPER:
     --gen-man                   Generate a manpage for Neofetch in your PWD. (Requires GNU help2man)
 
 
-Report bugs to https://github.com/dylanaraps/windfetch/issues
+Report bugs to https://github.com/dylanaraps/neofetch/issues
 
 "
 exit 1
