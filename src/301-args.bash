@@ -185,7 +185,7 @@ get_args() {
             "-vv") set -x; verbose="on" ;;
             "--help") usage ;;
             "--version")
-                printf '%s\n' "Neofetch $version"
+                printf '%s\n' "Windfetch $version"
                 exit 1
             ;;
             "--gen-man")

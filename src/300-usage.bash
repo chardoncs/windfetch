@@ -1,9 +1,9 @@
 usage() { printf "%s" "\
 Usage: windfetch func_name --option \"value\" --option \"value\"
 
-Neofetch is a CLI system information tool written in BASH. Neofetch
-displays information about your system next to an image, your OS logo,
-or any ASCII file of your choice.
+Windfetch is a Neofetch fork that displays displays information about
+your system next to an image, your OS logo, or any ASCII file of
+your choice.
 
 NOTE: Every launch flag has a config option.
 
@@ -264,10 +264,10 @@ OTHER:
     -vv                         Display a verbose log for error reporting.
 
 DEVELOPER:
-    --gen-man                   Generate a manpage for Neofetch in your PWD. (Requires GNU help2man)
+    --gen-man                   Generate a manpage for Windfetch in your PWD. (Requires GNU help2man)
 
 
-Report bugs to https://github.com/dylanaraps/neofetch/issues
+Report bugs to https://codeberg.org/chardon_cs/windfetch/issues
 
 "
 exit 1

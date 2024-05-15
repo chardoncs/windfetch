@@ -47,19 +47,19 @@ get_user_config() {
         err "Config: Sourced user config. (${config_file})"
         return
 
-    elif [[ -f "${XDG_CONFIG_HOME}/neofetch/config.conf" ]]; then
-        source "${XDG_CONFIG_HOME}/neofetch/config.conf"
-        err "Config: Sourced user config.    (${XDG_CONFIG_HOME}/neofetch/config.conf)"
+    elif [[ -f "${XDG_CONFIG_HOME}/windfetch/config.conf" ]]; then
+        source "${XDG_CONFIG_HOME}/windfetch/config.conf"
+        err "Config: Sourced user config.    (${XDG_CONFIG_HOME}/windfetch/config.conf)"
 
-    elif [[ -f "${XDG_CONFIG_HOME}/neofetch/config" ]]; then
-        source "${XDG_CONFIG_HOME}/neofetch/config"
-        err "Config: Sourced user config.    (${XDG_CONFIG_HOME}/neofetch/config)"
+    elif [[ -f "${XDG_CONFIG_HOME}/windfetch/config" ]]; then
+        source "${XDG_CONFIG_HOME}/windfetch/config"
+        err "Config: Sourced user config.    (${XDG_CONFIG_HOME}/windfetch/config)"
 
     elif [[ -z "$no_config" ]]; then
-        config_file="${XDG_CONFIG_HOME}/neofetch/config.conf"
+        config_file="${XDG_CONFIG_HOME}/windfetch/config.conf"
 
         # The config file doesn't exist, create it.
-        mkdir -p "${XDG_CONFIG_HOME}/neofetch/"
+        mkdir -p "${XDG_CONFIG_HOME}/windfetch/"
         printf '%s\n' "$config" > "$config_file"
     fi
 }
@@ -85,8 +85,8 @@ bar() {
 
 cache() {
     if [[ "$2" ]]; then
-        mkdir -p "${cache_dir}/neofetch"
-        printf "%s" "${1/*-}=\"$2\"" > "${cache_dir}/neofetch/${1/*-}"
+        mkdir -p "${cache_dir}/windfetch"
+        printf "%s" "${1/*-}=\"$2\"" > "${cache_dir}/windfetch/${1/*-}"
     fi
 }
 
