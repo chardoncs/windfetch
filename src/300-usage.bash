@@ -267,7 +267,7 @@ DEVELOPER:
     --gen-man                   Generate a manpage for Windfetch in your PWD. (Requires GNU help2man)
 
 
-Report bugs to https://codeberg.org/chardon_cs/windfetch/issues
+Report bugs to https://github.com/chardoncs/windfetch/issues
 
 "
 exit 1

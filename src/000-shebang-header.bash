@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Windfetch: A command-line system information tool written in bash. Fork of Neofetch.
-# https://codeberg.org/chardon_cs/windfetch
+# https://github.com/chardoncs/windfetch
 #
 # The MIT License (MIT)
 #
