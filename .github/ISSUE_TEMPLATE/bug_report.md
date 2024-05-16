@@ -10,6 +10,11 @@ assignees: ''
 **Describe the bug**
 A clear and concise description of what the bug is.
 
+> Verbose logs
+>
+> 1. Run `windfetch -vv 2> windfetch.log`
+> 2. Upload the contents of `windfetch.log` to pastebin, gist or equivalent.
+
 **To Reproduce**
 Steps to reproduce the behavior:
 1. Go to '...'
