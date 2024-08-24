@@ -1,5 +1,9 @@
 # Windfetch
 
+> [!WARNING]
+> 
+> Deprecated. Use [Fastfetch](https://github.com/fastfetch-cli/fastfetch) instead
+
 A command-line system information tool written in bash. Fork of [Neofetch](https://github.com/dylanaraps/neofetch).
 
 Work in progress.
