@@ -1,5 +1,7 @@
 # Windfetch
 
+Moved to [Codeberg](https://codeberg.org/chardon_cs/windfetch)
+
 A command-line system information tool written in bash. Fork of [Neofetch](https://github.com/dylanaraps/neofetch).
 
 Work in progress.
